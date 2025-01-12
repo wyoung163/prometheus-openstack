@@ -1397,7 +1397,7 @@ alertmanager:
     receivers:  
     - name: 'vitrage'
       webhook_configs:
-      - url: 'http://211.175.140.66/rca/v1/event' ## vitrage api
+      - url: 'http://localhost/rca/v1/event' ## vitrage api
         send_resolved: true
         http_config:
           basic_auth:
@@ -1405,7 +1405,7 @@ alertmanager:
             password: ''
     - name: 'zendesk'
       webhook_configs:
-      - url: 'http://211.175.140.56:5055/alerts' ## vitrage api
+      - url: 'http://localhost/alerts' ## vitrage api
         send_resolved: true
         http_config:
           basic_auth:
